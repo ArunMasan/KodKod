@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+    <AutoCompleteTextView
+        android:id="@+id/departureCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:hint="Departure City" />
+
+    <AutoCompleteTextView
+        android:id="@+id/arrivalCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/departureCity"
+        android:hint="Arrival City" />
+
+    <View
+        android:id="@+id/View1"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/arrivalCity" >
+    </View>
+
+    <View
+        android:id="@+id/View3"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tvArrivalDate" >
+    </View>
+
+    <Spinner
+        android:id="@+id/NumberOfPassengers"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/View3"
+        android:prompt="@string/spinner_title" />
+
+    <Button
+        android:id="@+id/SearchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/NumberOfPassengers"
+        android:text="Search" />
+
+    <TextView
+        android:id="@+id/tvDepartureDate"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/arrivalCity"
+        android:layout_below="@+id/View1"
+        android:hint="Departure Date" />
+
+    <TextView
+        android:id="@+id/tvArrivalDate"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/tvDepartureDate"
+        android:layout_below="@+id/tvDepartureDate"
+        android:hint="Returning Date" />
+
+</RelativeLayout>

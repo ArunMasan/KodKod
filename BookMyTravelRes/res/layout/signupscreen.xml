@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bb60a6"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/et_firstname_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/form_top"
+            android:clickable="true"
+            android:hint="First Name*"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/et_middlename_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/form_middle"
+            android:clickable="true"
+            android:hint="Middle Name"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/et_lastname_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_form_bottom"
+            android:clickable="true"
+            android:hint="Last Name*"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/signupDetails"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/et_email_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/form_top"
+                android:clickable="true"
+                android:hint="Email ID*"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/et_username_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/form_middle"
+                android:clickable="true"
+                android:hint="User Name*"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/et_password_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/form_middle"
+                android:clickable="true"
+                android:hint="Password*"
+                android:inputType="textPassword"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/et_cPassword_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/form_middle"
+                android:clickable="true"
+                android:hint="Confirm Password*"
+                android:inputType="textPassword"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/et_cardnum_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/form_middle"
+                android:clickable="true"
+                android:hint="Card Number*"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/et_cardmonth_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/form_middle"
+                android:clickable="true"
+                android:hint="Card Month*"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/et_cardmyear_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/form_middle"
+                android:clickable="true"
+                android:hint="Card Year*"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/et_cardAddr_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_form_bottom"
+                android:clickable="true"
+                android:hint="Card Billing Adress*"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/btn_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#bb60a6"
+                android:text="Sign Up"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rel_footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/termsandcondition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="I agree with terms and conditions" />
+    </LinearLayout>
+
+</LinearLayout>

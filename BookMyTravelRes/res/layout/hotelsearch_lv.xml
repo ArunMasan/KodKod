@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/hotelmage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/Comments"
+        android:layout_alignTop="@+id/hotelName"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/hotel1" />
+
+    <TextView
+        android:id="@+id/hotelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/hotelmage"
+        android:text="HotelName" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/hotelName"
+        android:layout_below="@+id/hotelName"
+        android:layout_toRightOf="@+id/hotelmage" />
+
+    <TextView
+        android:id="@+id/hotelPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/hotelName"
+        android:layout_marginRight="62dp"
+        android:text="HotelPrice" />
+
+    <TextView
+        android:id="@+id/Comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ratingBar"
+        android:layout_below="@+id/ratingBar"
+        android:layout_marginTop="22dp"
+        android:text="Comments" />
+
+</RelativeLayout>

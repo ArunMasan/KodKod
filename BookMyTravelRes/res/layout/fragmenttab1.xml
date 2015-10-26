@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    >
+
+    <EditText
+        android:id="@+id/fragment1_source_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:hint="Departure City" />
+
+    <EditText
+        android:id="@+id/fragment1_arrival_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment1_source_city"
+        android:hint="Arrival City" />
+
+  
+
+    <TextView
+        android:id="@+id/departuredate_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/fragment1_arrival_city"
+        android:hint="Departure Date" 
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/returndate_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/departuredate_tv"
+        android:hint="Returning Date" />
+
+    <RadioGroup
+        android:id="@+id/traviltrip_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/returndate_tv"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/oneway_rb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="One Way" />
+
+        <RadioButton
+            android:id="@+id/roundtrip_rb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Round Trip" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/nooftravellers"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/traviltrip_rg"
+        android:prompt="@string/spinner_title" />
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/nooftravellers"
+        android:text="Search" />
+
+</RelativeLayout>

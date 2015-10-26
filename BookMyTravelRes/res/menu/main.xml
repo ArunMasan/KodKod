@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <!--
+         Single menu item 
+		 Set id, icon and Title for each menu item
+    -->
+
+    <item
+        android:id="@+id/Check_Flight_Status"
+        android:title="Check Flight Status"/>
+    <item
+        android:id="@+id/Accumulate_Milage"
+        android:title="Accumulate Milage"/>
+    <item
+        android:id="@+id/Reedem_Mileage"
+        android:title="Reedem Mileage"/>
+    <item
+        android:id="@+id/Finding_Deals"
+        android:title="Finding Deals"/>
+    <item
+        android:id="@+id/Feedback"
+        android:title="Feedback"/>
+    <item
+        android:id="@+id/Logout"
+        android:title="Logout"/>
+
+</menu>

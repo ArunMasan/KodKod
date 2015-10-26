@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+    <AutoCompleteTextView
+        android:id="@+id/FlightNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:hint="Flight Number" />
+
+    <AutoCompleteTextView
+        android:id="@+id/AirlineName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FlightNumber"
+        android:hint="Airline Name" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/AirlineName" >
+    </View>
+
+    <TextView
+        android:id="@+id/tvDepartureDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/AirlineName"
+        android:layout_below="@+id/view1"
+        android:hint="Departure Date" />
+
+    <Button
+        android:id="@+id/SearchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvDepartureDate"
+        android:layout_below="@+id/tvDepartureDate"
+        android:layout_marginTop="43dp"
+        android:text="Search" />
+
+</RelativeLayout>

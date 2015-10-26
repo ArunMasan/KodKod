@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:hint="Destination" />
+
+    <TextView
+        android:id="@+id/tvDeparturedate"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/destination"
+        android:hint="Check-In" />
+
+    <TextView
+        android:id="@+id/tvReturningDate"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tvDeparturedate"
+        android:hint="Check-Out" />
+
+    <Spinner
+        android:id="@+id/NumberofPersons"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvReturningDate"
+        android:prompt="@string/spinner_title" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/NumberofPersons"
+        android:ems="10"
+        android:text="AutoCompleteTextView" >
+    </AutoCompleteTextView>
+
+    <Button
+        android:id="@+id/SearchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/autoCompleteTextView1"
+        android:layout_marginTop="60dp"
+        android:text="Search" />
+
+    <Spinner
+        android:id="@+id/SourceCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/autoCompleteTextView1"
+        android:layout_below="@+id/autoCompleteTextView1" />
+
+</RelativeLayout>

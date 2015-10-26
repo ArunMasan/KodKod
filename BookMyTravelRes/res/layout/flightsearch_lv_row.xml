@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:minHeight="40dp"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/flightsearch_lv_row_source"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:text="Source" />
+
+    <TextView
+        android:id="@+id/flightsearch_lv_row_departure"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:text="Departure" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/flightsearch_lv_row_departure_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:text="Departure Time" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/flightsearch_lv_row_arrival_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:text="Arrival Time" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/flightsearch_lv_row_travel_duration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:text="Travel Duration" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/flightsearch_lv_row_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:text="Price" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/flightsearch_lv_row_miles"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:text="Miles" >
+    </TextView>
+
+</LinearLayout>

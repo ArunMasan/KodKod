@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/Hotel_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/flightsearch_destination_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Destination" />
+
+        <TextView
+            android:id="@+id/CheckInTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CheckInTime" />
+
+        <TextView
+            android:id="@+id/CheckOutTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CheckOutTime" />
+
+        <TextView
+            android:id="@+id/NoofPersons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="No.of.Persons" />
+
+        <TextView
+            android:id="@+id/NoofRooms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="No.of.Rooms" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Hotel_header_Values"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Hotel_header"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/flightsearch_destination_tv_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Destination Value" />
+
+        <TextView
+            android:id="@+id/CheckInTime_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CheckInTime Value" />
+
+        <TextView
+            android:id="@+id/CheckOutTime_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CheckOutTime Value" />
+
+        <TextView
+            android:id="@+id/NoofPersons_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="No.of.Persons Value" />
+
+        <TextView
+            android:id="@+id/NoofRooms_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="No.of.Rooms Value" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/hotelsearch_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Hotel_header_Values" />
+
+</RelativeLayout>

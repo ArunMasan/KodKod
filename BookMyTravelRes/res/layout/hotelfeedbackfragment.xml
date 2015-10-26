@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/Hotels_booked_by_you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="17dp"
+        android:text="Hotels booked by you:" />
+
+    <TextView
+        android:id="@+id/HotelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Hotels_booked_by_you"
+        android:layout_marginLeft="19dp"
+        android:text="Hotel Name" />
+
+    <Button
+        android:id="@+id/SubmitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Guest_Rating"
+        android:layout_below="@+id/Recommendation"
+        android:layout_marginTop="17dp"
+        android:text="Submit" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/Recommendation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Guest_Rating"
+        android:layout_marginTop="54dp"
+        android:ems="10"
+        android:hint="Recommendation to a Hotel" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/HotelName"
+        android:layout_below="@+id/HotelName"
+        android:layout_marginTop="37dp" />
+
+    <TextView
+        android:id="@+id/Guest_Rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ratingBar"
+        android:layout_below="@+id/HotelName"
+        android:layout_marginTop="16dp"
+        android:text="Your Rating" />
+
+</RelativeLayout>

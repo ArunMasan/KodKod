@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/Question1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Satisfied with the App?" />
+
+    <EditText
+        android:id="@+id/Answer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comments"
+        android:layout_toRightOf="@+id/Question1"
+        android:hint="1-10"
+        android:inputType="number" >
+    </EditText>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/Answer1" >
+    </View>
+
+    <TextView
+        android:id="@+id/Question2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/Answer2"
+        android:text="Satisfied with Offers?" />
+
+    <EditText
+        android:id="@+id/Answer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:layout_toRightOf="@+id/Question2"
+        android:hint="1-10"
+        android:inputType="number" >
+    </EditText>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/Answer2" >
+    </View>
+
+    <TextView
+        android:id="@+id/Question3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Answer3"
+        android:layout_toLeftOf="@+id/textView2"
+        android:text="Satisfied with Flights?" />
+
+    <EditText
+        android:id="@+id/Answer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"
+        android:layout_toRightOf="@+id/Question3"
+        android:hint="1-10"
+        android:inputType="number" >
+    </EditText>
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter your comments about the app here" >
+
+        <requestFocus />
+    </MultiAutoCompleteTextView>
+
+    <Button
+        android:id="@+id/SubmitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Submit" />
+
+</LinearLayout>
