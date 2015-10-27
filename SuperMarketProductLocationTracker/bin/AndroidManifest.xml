@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.techblogon.loginexample"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Initial"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignUPActivity" />
+        <activity
+            android:name=".HomeScreen"
+            android:label="@string/title_activity_home_screen" >
+        </activity>
+        <activity
+            android:name=".MapPro"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity android:name="Home" >
+        </activity>
+        <activity android:name="Splash" >
+        </activity>
+        <activity android:name="Enter" >
+        </activity>
+        <activity android:name="MyApp" >
+        </activity>
+        <activity android:name="Data" >
+        </activity>
+        <activity android:name="Map" >
+        </activity>
+        <activity android:name="MainActivity" >
+        </activity>
+        <activity android:name="Dijkstra" >
+        </activity>
+        <activity android:name="Show" >
+        </activity>
+    </application>
+
+</manifest>
